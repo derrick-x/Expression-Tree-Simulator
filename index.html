@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Expression Tree Simulator</title>
+</head>
+<body>
+    <h1>Expression Tree Simulator</h1>
+    <canvas id="tree" width="600" height="600"></canvas>
+    <p id="expression">Use the buttons below to create an expression</p>
+    <input type="button" value="0" onclick="input(0, 0)"/>
+    <input type="button" value="1" onclick="input(1, 0)"/>
+    <input type="button" value="2" onclick="input(2, 0)"/>
+    <input type="button" value="3" onclick="input(3, 0)"/>
+    <input type="button" value="4" onclick="input(4, 0)"/>
+    <input type="button" value="5" onclick="input(5, 0)"/>
+    <input type="button" value="6" onclick="input(6, 0)"/>
+    <input type="button" value="7" onclick="input(7, 0)"/>
+    <input type="button" value="8" onclick="input(8, 0)"/>
+    <input type="button" value="9" onclick="input(9, 0)"/>
+    <br>
+    <input type="button" value="+" onclick="input('+', 1)"/>
+    <input type="button" value="-" onclick="input('-', 2)"/>
+    <input type="button" value="*" onclick="input('*', 3)"/>
+    <input type="button" value="/" onclick="input('/', 4)"/>
+    <input type="button" value="^" onclick="input('^', 5)"/>
+    <input type="button" value="(" onclick="input('(', 6)"/>
+    <input type="button" value=")" onclick="input(')', 7)"/>
+    <br>
+    <input type="button" value="Reset" onclick="reset()"/>
+    <input type="button" value="Evaluate preorder" onclick="evaluate(0)"/>
+    <input type="button" value="Evaluate postorder" onclick="evaluate(1)"/>
+    <input type="button" id ="next" value="Next" hidden onclick="next()"/>
+    <br>
+    <p id = "msg"></p>
+    <p id = "eval"></p>
+    <p id= "math"></p>
+    <p id="credit">Created by Derrick Xian</p>
+</body>
+</html>
